@@ -1,0 +1,4 @@
+D:\Programacion-GitHub\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\bin\Debug\netstandard2.0\MAP_K0_DAL.deps.json
+D:\Programacion-GitHub\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\bin\Debug\netstandard2.0\MAP_K0_DAL.dll
+D:\Programacion-GitHub\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.AssemblyInfoInputs.cache
+D:\Programacion-GitHub\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.AssemblyInfo.cs

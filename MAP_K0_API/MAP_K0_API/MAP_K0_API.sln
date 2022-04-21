@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAP_K0_DAL", "MAP_K0_DAL\MAP_K0_DAL.csproj", "{A6ACF30B-467D-4507-BABB-802AA7FAE602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAP_K0_Entities", "MAP_K0_Entities\MAP_K0_Entities.csproj", "{B80D4C2E-F8E2-4FA6-B864-2AC14D8BDA1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6ACF30B-467D-4507-BABB-802AA7FAE602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6ACF30B-467D-4507-BABB-802AA7FAE602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6ACF30B-467D-4507-BABB-802AA7FAE602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6ACF30B-467D-4507-BABB-802AA7FAE602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80D4C2E-F8E2-4FA6-B864-2AC14D8BDA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80D4C2E-F8E2-4FA6-B864-2AC14D8BDA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80D4C2E-F8E2-4FA6-B864-2AC14D8BDA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80D4C2E-F8E2-4FA6-B864-2AC14D8BDA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F263974C-A699-4187-BDAD-9990E44CB75C}
+	EndGlobalSection
+EndGlobal

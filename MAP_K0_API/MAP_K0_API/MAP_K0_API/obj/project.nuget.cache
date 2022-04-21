@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+AAanF3qdeElaRs/udXlCP4e577jN3EH0CBoEKCMx7mwQnILZSMXUN5A9Ipi8v6SNnqSmow+6dyawIpi7bQ+pA==",
+  "success": true,
+  "projectFilePath": "D:\\Programacion-GitHub\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_API\\MAP_K0_API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kanadista\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Kanadista\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
