@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MAP_K0_DAL\MAP_K0_DAL.csproj" />
+    <ProjectReference Include="..\MAP_K0_Entities\MAP_K0_Entities.csproj" />
+  </ItemGroup>
+
+</Project>

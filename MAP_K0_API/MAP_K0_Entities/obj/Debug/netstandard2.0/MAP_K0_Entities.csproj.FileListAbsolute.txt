@@ -1,0 +1,9 @@
+E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\bin\Debug\netstandard2.0\MAP_K0_Entities.deps.json
+E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\bin\Debug\netstandard2.0\MAP_K0_Entities.dll
+E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\bin\Debug\netstandard2.0\MAP_K0_Entities.pdb
+E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstandard2.0\MAP_K0_Entities.csprojAssemblyReference.cache
+E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstandard2.0\MAP_K0_Entities.AssemblyInfoInputs.cache
+E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstandard2.0\MAP_K0_Entities.AssemblyInfo.cs
+E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstandard2.0\MAP_K0_Entities.csproj.CoreCompileInputs.cache
+E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstandard2.0\MAP_K0_Entities.dll
+E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstandard2.0\MAP_K0_Entities.pdb

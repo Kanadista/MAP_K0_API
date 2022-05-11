@@ -1,0 +1,200 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\MAP_K0_BL.csproj": {}
+  },
+  "projects": {
+    "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\MAP_K0_BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\MAP_K0_BL.csproj",
+        "projectName": "MAP_K0_BL",
+        "projectPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\MAP_K0_BL.csproj",
+        "packagesPath": "C:\\Users\\Kanadista\\.nuget\\packages\\",
+        "outputPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kanadista\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_DAL\\MAP_K0_DAL.csproj": {
+                "projectPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_DAL\\MAP_K0_DAL.csproj"
+              },
+              "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj": {
+                "projectPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_DAL\\MAP_K0_DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_DAL\\MAP_K0_DAL.csproj",
+        "projectName": "MAP_K0_DAL",
+        "projectPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_DAL\\MAP_K0_DAL.csproj",
+        "packagesPath": "C:\\Users\\Kanadista\\.nuget\\packages\\",
+        "outputPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kanadista\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj": {
+                "projectPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj",
+        "projectName": "MAP_K0_Entities",
+        "projectPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj",
+        "packagesPath": "C:\\Users\\Kanadista\\.nuget\\packages\\",
+        "outputPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kanadista\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
