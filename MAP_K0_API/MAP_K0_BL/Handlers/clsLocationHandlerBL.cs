@@ -15,19 +15,19 @@ namespace MAP_K0_BL.Handlers
 
         }
 
-        public int deleteEventAssistance(int id)
+        public int deleteLocation(int id)
         {
             clsLocationHandlerDAL oHandler = new clsLocationHandlerDAL();
             return oHandler.deleteLocation(id);
         }
 
-        public int updateLocationAssistance(clsLocation location)
+        public int updateLocation(clsLocation location)
         {
             clsLocationHandlerDAL oHandler = new clsLocationHandlerDAL();
             return oHandler.updateLocation(location);
         }
 
-        public int createEventAssistance(clsLocation location)
+        public int createLocation(clsLocation location)
         {
             clsLocationHandlerDAL oHandler = new clsLocationHandlerDAL();
             return oHandler.createLocation(location);

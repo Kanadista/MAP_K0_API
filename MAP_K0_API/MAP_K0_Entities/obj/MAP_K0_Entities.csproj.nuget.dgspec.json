@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj": {}
+    "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj": {}
   },
   "projects": {
-    "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj": {
+    "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj",
+        "projectUniqueName": "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj",
         "projectName": "MAP_K0_Entities",
-        "projectPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj",
+        "projectPath": "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj",
         "packagesPath": "C:\\Users\\Kanadista\\.nuget\\packages\\",
-        "outputPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\obj\\",
+        "outputPath": "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Microsoft\\Xamarin\\NuGet\\"

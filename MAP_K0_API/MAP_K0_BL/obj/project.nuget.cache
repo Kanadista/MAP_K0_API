@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p5C8E7Ag2tvj3/McSqtIRhsj+UbUh4aPe52KiMrQNZazLMYUFECkgvehthWHMS5a+pHEtPJdF+5i8ZxzKq64GA==",
+  "dgSpecHash": "PXTZJw5GoqJSjNjKy2B/fJNGspxUq8Qc944vPzhBURqVACihyiNtaSX75BYmJRn26aaYx3sv8veFZpdTeUGPVA==",
   "success": true,
-  "projectFilePath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\MAP_K0_BL.csproj",
+  "projectFilePath": "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\MAP_K0_BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kanadista\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Kanadista\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

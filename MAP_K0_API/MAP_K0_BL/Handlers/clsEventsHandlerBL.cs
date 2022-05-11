@@ -8,26 +8,26 @@ namespace MAP_K0_BL.Handlers
 {
    public class clsEventsHandlerBL
     {
-        public clsEvent getEventAssistanceById(int id)
+        public clsEvent getEventById(int id)
         {
             clsEventHandlerDAL oHandler = new clsEventHandlerDAL();
             return oHandler.getEventById(id);
 
         }
 
-        public int deleteEventAssistance(int id)
+        public int deleteEvent(int id)
         {
             clsEventHandlerDAL oHandler = new clsEventHandlerDAL();
             return oHandler.deleteEvent(id);
         }
 
-        public int updateEventAssistance(clsEvent oEvent)
+        public int updateEvent(clsEvent oEvent)
         {
             clsEventHandlerDAL oHandler = new clsEventHandlerDAL();
             return oHandler.updateEvent(oEvent);
         }
 
-        public int createEventAssistance(clsEvent oEvent)
+        public int createEvent(clsEvent oEvent)
         {
             clsEventHandlerDAL oHandler = new clsEventHandlerDAL();
             return oHandler.createEvent(oEvent);

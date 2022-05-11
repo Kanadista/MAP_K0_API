@@ -897,11 +897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\MAP_K0_BL.csproj",
+      "projectUniqueName": "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\MAP_K0_BL.csproj",
       "projectName": "MAP_K0_BL",
-      "projectPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\MAP_K0_BL.csproj",
+      "projectPath": "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\MAP_K0_BL.csproj",
       "packagesPath": "C:\\Users\\Kanadista\\.nuget\\packages\\",
-      "outputPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\obj\\",
+      "outputPath": "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_BL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Microsoft\\Xamarin\\NuGet\\"
@@ -921,11 +921,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_DAL\\MAP_K0_DAL.csproj": {
-              "projectPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_DAL\\MAP_K0_DAL.csproj"
+            "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_DAL\\MAP_K0_DAL.csproj": {
+              "projectPath": "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_DAL\\MAP_K0_DAL.csproj"
             },
-            "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj": {
-              "projectPath": "E:\\Programacion\\MAP_K0\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj"
+            "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj": {
+              "projectPath": "D:\\Programacion-GitHub\\MAP_K0_API\\MAP_K0_API\\MAP_K0_Entities\\MAP_K0_Entities.csproj"
             }
           }
         }
