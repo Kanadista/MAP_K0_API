@@ -235,6 +235,9 @@
       "MAP_K0_Entities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Data.SqlClient": "4.8.3"
+        },
         "compile": {
           "bin/placeholder/MAP_K0_Entities.dll": {}
         },
@@ -887,7 +890,8 @@
     ".NETStandard,Version=v2.0": [
       "MAP_K0_DAL >= 1.0.0",
       "MAP_K0_Entities >= 1.0.0",
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "System.Data.SqlClient >= 4.8.3"
     ]
   },
   "packageFolders": {
@@ -944,6 +948,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.8.3, )"
           }
         },
         "imports": [

@@ -1,0 +1,14 @@
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\bin\Debug\netstandard2.0\MAP_K0_BL.deps.json
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\bin\Debug\netstandard2.0\MAP_K0_BL.dll
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\bin\Debug\netstandard2.0\MAP_K0_BL.pdb
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\bin\Debug\netstandard2.0\MAP_K0_DAL.dll
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\bin\Debug\netstandard2.0\MAP_K0_Entities.dll
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\bin\Debug\netstandard2.0\MAP_K0_DAL.pdb
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\bin\Debug\netstandard2.0\MAP_K0_Entities.pdb
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\obj\Debug\netstandard2.0\MAP_K0_BL.csprojAssemblyReference.cache
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\obj\Debug\netstandard2.0\MAP_K0_BL.AssemblyInfoInputs.cache
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\obj\Debug\netstandard2.0\MAP_K0_BL.AssemblyInfo.cs
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\obj\Debug\netstandard2.0\MAP_K0_BL.csproj.CopyComplete
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\obj\Debug\netstandard2.0\MAP_K0_BL.dll
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\obj\Debug\netstandard2.0\MAP_K0_BL.pdb
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_BL\obj\Debug\netstandard2.0\MAP_K0_BL.csproj.CoreCompileInputs.cache

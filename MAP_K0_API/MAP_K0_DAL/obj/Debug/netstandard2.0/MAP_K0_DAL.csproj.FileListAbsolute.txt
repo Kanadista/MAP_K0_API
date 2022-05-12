@@ -6,3 +6,15 @@ E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0
 E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.AssemblyInfoInputs.cache
 E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.AssemblyInfo.cs
 E:\Programacion\MAP_K0\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.csproj.CoreCompileInputs.cache
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\bin\Debug\netstandard2.0\MAP_K0_DAL.deps.json
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\bin\Debug\netstandard2.0\MAP_K0_DAL.dll
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\bin\Debug\netstandard2.0\MAP_K0_DAL.pdb
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\bin\Debug\netstandard2.0\MAP_K0_Entities.dll
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\bin\Debug\netstandard2.0\MAP_K0_Entities.pdb
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.csprojAssemblyReference.cache
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.AssemblyInfoInputs.cache
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.AssemblyInfo.cs
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.csproj.CoreCompileInputs.cache
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.csproj.CopyComplete
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.dll
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_DAL\obj\Debug\netstandard2.0\MAP_K0_DAL.pdb

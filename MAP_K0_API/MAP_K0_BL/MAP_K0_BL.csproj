@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MAP_K0_DAL\MAP_K0_DAL.csproj" />
     <ProjectReference Include="..\MAP_K0_Entities\MAP_K0_Entities.csproj" />
   </ItemGroup>

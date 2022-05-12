@@ -44,7 +44,10 @@ namespace MAP_K0_DAL.Lists
                         oUser.firstName = (string)reader["firstName"];
                         oUser.lastName = (string)reader["lastName"];
                         oUser.address = (string)reader["address"];
-                        oUser.profilePic = (byte[])reader["profilePic"];
+                        if (reader.GetValue(5) != System.DBNull.Value)
+                        {
+                            oUser.profilePic = (byte[])reader["profilePic"];
+                        }
                         oUser.level = (int)reader["level"];
                         oUser.levelxp = (int)reader["levelxp"];
 

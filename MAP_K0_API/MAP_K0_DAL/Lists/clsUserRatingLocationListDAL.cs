@@ -41,7 +41,7 @@ namespace MAP_K0_DAL.Lists
 
                         userRatingLocation.idUser = (int)reader["idUser"];
                         userRatingLocation.idLocation = (int)reader["idLocation"];
-                        userRatingLocation.stars = (int)reader["stars"];
+                        userRatingLocation.stars = (Int16)reader["stars"];
                         userRatingLocation.comment = (string)reader["comment"];
            
                         list.Add(userRatingLocation);

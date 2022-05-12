@@ -12,7 +12,7 @@ namespace MAP_K0_API_.Controllers
 {
         public class EventsController : ApiController
         {
-            // GET: api/Personas
+            // GET: api/Events
             public IEnumerable<clsEvent> Get()
             {
 
@@ -34,7 +34,7 @@ namespace MAP_K0_API_.Controllers
                 return list;
             }
 
-            // GET: api/Personas/5
+            // GET: api/Events/5
             public clsEvent Get(int id)
             {
             clsEventsHandlerBL oHandler = new clsEventsHandlerBL();
@@ -57,7 +57,7 @@ namespace MAP_K0_API_.Controllers
                 return oEvent;
             }
 
-            // POST: api/Personas
+            // POST: api/Events
             public void Post([FromBody] clsEvent oEvent)
             {
             clsEventsHandlerBL oHandler = new clsEventsHandlerBL();
@@ -77,7 +77,7 @@ namespace MAP_K0_API_.Controllers
 
             }
 
-            // PUT: api/Personas/5
+            // PUT: api/Events/5
             public void Put(int id, [FromBody] clsEvent oEvent)
             {
                      clsEventsHandlerBL oHandler = new clsEventsHandlerBL();
@@ -101,7 +101,7 @@ namespace MAP_K0_API_.Controllers
 
             }
 
-            // DELETE: api/Personas/5
+            // DELETE: api/Events/5
             public void Delete(int id)
             {
 

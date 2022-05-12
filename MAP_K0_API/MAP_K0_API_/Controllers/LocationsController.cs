@@ -12,7 +12,7 @@ namespace MAP_K0_API_.Controllers
 {
         public class LocationsController : ApiController
         {
-            // GET: api/Personas
+            // GET: api/Locations
             public IEnumerable<clsLocation> Get()
             {
 
@@ -34,7 +34,7 @@ namespace MAP_K0_API_.Controllers
                 return list;
             }
 
-            // GET: api/Personas/5
+            // GET: api/Locations/5
             public clsLocation Get(int id)
             {
                 clsLocationHandlerBL oHandler = new clsLocationHandlerBL();
@@ -57,7 +57,7 @@ namespace MAP_K0_API_.Controllers
                 return oLocation;
             }
 
-            // POST: api/Personas
+            // POST: api/Locations
             public void Post([FromBody] clsLocation oLocation)
             {
                 clsLocationHandlerBL oHandler = new clsLocationHandlerBL();
@@ -77,7 +77,7 @@ namespace MAP_K0_API_.Controllers
 
             }
 
-            // PUT: api/Personas/5
+            // PUT: api/Locations/5
             public void Put(int id, [FromBody] clsLocation oLocation)
             {
               clsLocationHandlerBL oHandler = new clsLocationHandlerBL();
@@ -101,7 +101,7 @@ namespace MAP_K0_API_.Controllers
 
             }
 
-            // DELETE: api/Personas/5
+            // DELETE: api/Locations/5
             public void Delete(int id)
             {
 

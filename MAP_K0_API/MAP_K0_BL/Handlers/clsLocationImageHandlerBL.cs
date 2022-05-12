@@ -21,7 +21,7 @@ namespace MAP_K0_BL.Handlers
             return oHandler.updateLocationImage(locationImage);
         }
 
-        public int createEventAssistance(clsLocationImage locationImage)
+        public int createLocationImage(clsLocationImage locationImage)
         {
             clsLocationImageHandlerDAL oHandler = new clsLocationImageHandlerDAL();
             return oHandler.createLocationImage(locationImage);
