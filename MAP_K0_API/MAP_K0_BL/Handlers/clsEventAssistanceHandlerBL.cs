@@ -9,14 +9,14 @@ namespace MAP_K0_BL.Handlers
     public class clsEventAssistanceHandlerBL
     {
         
-        public clsEventAssistance getEventAssistanceById(int idEvent, int idUser)
+        public clsEventAssistance getEventAssistanceById(int idEvent)
         {
             clsEventAssistanceHandlerDAL oHandler = new clsEventAssistanceHandlerDAL();
-            return oHandler.getEventAssistanceById(idEvent, idUser);
+            return oHandler.getEventAssistanceById(idEvent);
 
         }
 
-        public int deleteEventAssistance(int idEvent, int idUser)
+        public int deleteEventAssistance(int idEvent, string idUser)
         {
             clsEventAssistanceHandlerDAL oHandler = new clsEventAssistanceHandlerDAL();
             return oHandler.deleteEventAssistance(idEvent, idUser);

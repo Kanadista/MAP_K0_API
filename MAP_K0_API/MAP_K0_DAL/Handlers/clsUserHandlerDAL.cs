@@ -10,7 +10,7 @@ namespace MAP_K0_DAL.Handlers
    public class clsUserHandlerDAL
     {
 
-        public clsUser getUserById(int id)
+        public clsUser getUserById(string id)
         {
 
             clsUser oUser = new clsUser();
@@ -26,7 +26,7 @@ namespace MAP_K0_DAL.Handlers
                 Connection = conexion.getConnection()
             };
 
-            miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
+            miComando.Parameters.Add("@id", System.Data.SqlDbType.VarChar).Value = id;
 
             SqlDataReader miLector;
 
@@ -39,7 +39,7 @@ namespace MAP_K0_DAL.Handlers
                 {
                     while (miLector.Read())
                     {
-                        oUser.id = (int)miLector["id"];
+                        oUser.id = (string)miLector["id"];
                         oUser.nickName = (string)miLector["name"];
                         oUser.firstName = (string)miLector["firstName"];
                         oUser.lastName = (string)miLector["lastName"];
@@ -61,7 +61,7 @@ namespace MAP_K0_DAL.Handlers
         }
 
 
-        public int deleteUser(int id)
+        public int deleteUser(string id)
         {
             int filasAfectadas = 0;
 
@@ -76,7 +76,7 @@ namespace MAP_K0_DAL.Handlers
 
             };
 
-            miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
+            miComando.Parameters.Add("@id", System.Data.SqlDbType.VarChar).Value = id;
 
             try
             {
@@ -114,7 +114,7 @@ namespace MAP_K0_DAL.Handlers
                 Connection = conexion.getConnection()
             };
 
-            miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = oUser.id;
+            miComando.Parameters.Add("@id", System.Data.SqlDbType.VarChar).Value = oUser.id;
             miComando.Parameters.Add("@nickName", System.Data.SqlDbType.VarChar).Value = oUser.nickName;
             miComando.Parameters.Add("@firstName", System.Data.SqlDbType.VarChar).Value = oUser.firstName;
             miComando.Parameters.Add("@lastName", System.Data.SqlDbType.VarChar).Value = oUser.lastName;
@@ -160,7 +160,7 @@ namespace MAP_K0_DAL.Handlers
 
             };
 
-            miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = oUser.id;
+            miComando.Parameters.Add("@id", System.Data.SqlDbType.VarChar).Value = oUser.id;
             miComando.Parameters.Add("@nickName", System.Data.SqlDbType.VarChar).Value = oUser.nickName;
             miComando.Parameters.Add("@firstName", System.Data.SqlDbType.VarChar).Value = oUser.firstName;
             miComando.Parameters.Add("@lastName", System.Data.SqlDbType.VarChar).Value = oUser.lastName;

@@ -7,6 +7,6 @@ namespace MAP_K0_Entities
     public class clsEventAssistance
     {
         public int idEvent { get; set; }
-        public int idUser { get; set; }
+        public string idUser { get; set; }
     }
 }

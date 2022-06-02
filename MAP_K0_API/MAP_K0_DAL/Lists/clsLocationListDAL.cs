@@ -44,7 +44,7 @@ namespace MAP_K0_DAL.Lists
                             oLocation.description = (string)reader["description"];
                             oLocation.latitud = (decimal)reader["latitud"];
                             oLocation.longitude = (decimal)reader["longitude"];
-                            oLocation.creatorId = (int)reader["creatorID"];
+                            oLocation.creatorId = (string)reader["creatorID"];
                        
                             list.Add(oLocation);
 

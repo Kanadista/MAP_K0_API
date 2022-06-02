@@ -10,7 +10,7 @@ namespace MAP_K0_DAL.Handlers
     public class clsUserSavedLocationHandlerDAL
     {
 
-        public clsUserSavedLocations getUserSavedLocationById(int idUser, int idLocation)
+        public clsUserSavedLocations getUserSavedLocationById(string idUser)
         {
 
             clsUserSavedLocations userSavedLocation = new clsUserSavedLocations();
@@ -21,13 +21,12 @@ namespace MAP_K0_DAL.Handlers
             {
 
 
-                CommandText = "SELECT idUser, idLocation FROM K0_MAP_USER_SAVED_LOCATIONS WHERE idUser = @idUser AND idLocation = @idLocation",
+                CommandText = "SELECT idUser, idLocation FROM K0_MAP_USER_SAVED_LOCATIONS WHERE idUser = @idUser",
 
                 Connection = conexion.getConnection()
             };
 
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = idUser;
-            miComando.Parameters.Add("@idLocation", System.Data.SqlDbType.Int).Value = idLocation;
+            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.VarChar).Value = idUser;
 
             SqlDataReader miLector;
 
@@ -40,7 +39,7 @@ namespace MAP_K0_DAL.Handlers
                 {
                     while (miLector.Read())
                     {
-                        userSavedLocation.idUser = (int)miLector["idUser"];
+                        userSavedLocation.idUser = (string)miLector["idUser"];
                         userSavedLocation.idLocation = (int)miLector["idLocation"];
                     }
                 }
@@ -55,7 +54,7 @@ namespace MAP_K0_DAL.Handlers
         }
 
 
-        public int deleteUserSavedLocation(int idUser, int idLocation)
+        public int deleteUserSavedLocation(string idUser, int idLocation)
         {
             int filasAfectadas = 0;
 
@@ -71,7 +70,7 @@ namespace MAP_K0_DAL.Handlers
             };
 
 
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = idUser;
+            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.VarChar).Value = idUser;
             miComando.Parameters.Add("@idLocation", System.Data.SqlDbType.Int).Value = idLocation;
 
             try
@@ -110,7 +109,7 @@ namespace MAP_K0_DAL.Handlers
                 Connection = conexion.getConnection()
             };
 
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = userSavedLocation.idUser;
+            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.VarChar).Value = userSavedLocation.idUser;
             miComando.Parameters.Add("@idLocation", System.Data.SqlDbType.VarChar).Value = userSavedLocation.idLocation;
 
             try
@@ -150,7 +149,7 @@ namespace MAP_K0_DAL.Handlers
 
             };
 
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = userSavedLocation.idUser;
+            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.VarChar).Value = userSavedLocation.idUser;
             miComando.Parameters.Add("@idLocation", System.Data.SqlDbType.VarChar).Value = userSavedLocation.idLocation;
 
             try

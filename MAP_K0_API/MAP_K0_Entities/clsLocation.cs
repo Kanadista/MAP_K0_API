@@ -11,6 +11,6 @@ namespace MAP_K0_Entities
         public string description { get; set; }
         public decimal latitud {get;set;}
         public decimal longitude { get; set; }
-        public int creatorId { get; set; }
+        public string creatorId { get; set; }
     }
 }

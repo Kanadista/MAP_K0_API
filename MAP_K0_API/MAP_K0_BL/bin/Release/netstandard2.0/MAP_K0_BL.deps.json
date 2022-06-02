@@ -11,7 +11,8 @@
         "dependencies": {
           "MAP_K0_DAL": "1.0.0",
           "MAP_K0_Entities": "1.0.0",
-          "NETStandard.Library": "2.0.3"
+          "NETStandard.Library": "2.0.3",
+          "System.Data.SqlClient": "4.8.3"
         },
         "runtime": {
           "MAP_K0_BL.dll": {}
@@ -152,6 +153,9 @@
         }
       },
       "MAP_K0_Entities/1.0.0": {
+        "dependencies": {
+          "System.Data.SqlClient": "4.8.3"
+        },
         "runtime": {
           "MAP_K0_Entities.dll": {}
         }

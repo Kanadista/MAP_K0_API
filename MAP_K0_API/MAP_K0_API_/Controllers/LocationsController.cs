@@ -58,6 +58,7 @@ namespace MAP_K0_API_.Controllers
             }
 
             // POST: api/Locations
+            [HttpPost]
             public void Post([FromBody] clsLocation oLocation)
             {
                 clsLocationHandlerBL oHandler = new clsLocationHandlerBL();

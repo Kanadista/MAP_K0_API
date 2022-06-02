@@ -39,7 +39,7 @@ namespace MAP_K0_DAL.Lists
                     {
                         userRatingLocation = new clsUserRatingLocation();
 
-                        userRatingLocation.idUser = (int)reader["idUser"];
+                        userRatingLocation.idUser = (string)reader["idUser"];
                         userRatingLocation.idLocation = (int)reader["idLocation"];
                         userRatingLocation.stars = (Int16)reader["stars"];
                         userRatingLocation.comment = (string)reader["comment"];

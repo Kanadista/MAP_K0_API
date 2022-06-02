@@ -99,3 +99,5 @@ D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\es\System.Web.WebPa
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\obj\Release\MAP_K0_API_.csproj.CopyComplete
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\obj\Release\MAP_K0_API_.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\obj\Release\MAP_K0_API_.pdb
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Data.SqlClient.dll
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Data.SqlClient.xml

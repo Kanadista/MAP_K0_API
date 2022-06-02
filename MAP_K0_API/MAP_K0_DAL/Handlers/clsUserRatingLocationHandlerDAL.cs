@@ -9,7 +9,7 @@ namespace MAP_K0_DAL.Handlers
 {
     public class clsUserRatingLocationHandlerDAL
     {
-        public clsUserRatingLocation getUserRatingById(int idUser, int idLocation)
+        public clsUserRatingLocation getUserRatingById(int idLocation)
         {
 
             clsUserRatingLocation userRatingLocation = new clsUserRatingLocation();
@@ -20,12 +20,11 @@ namespace MAP_K0_DAL.Handlers
             {
 
 
-                CommandText = "SELECT idUser, idLocation, stars, comment FROM K0_MAP_USER_RATING_LOCATIONS WHERE idUser = @idUser AND idLocation = @idLocation",
+                CommandText = "SELECT idUser, idLocation, stars, comment FROM K0_MAP_USER_RATING_LOCATIONS WHERE idLocation = @idLocation",
 
                 Connection = conexion.getConnection()
             };
 
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = idUser;
             miComando.Parameters.Add("@idLocation", System.Data.SqlDbType.Int).Value = idLocation;
 
             SqlDataReader miLector;
@@ -39,7 +38,7 @@ namespace MAP_K0_DAL.Handlers
                 {
                     while (miLector.Read())
                     {
-                        userRatingLocation.idUser = (int)miLector["idUser"];
+                        userRatingLocation.idUser = (string)miLector["idUser"];
                         userRatingLocation.idLocation = (int)miLector["idLocation"];
                         userRatingLocation.stars = (int)miLector["stars"];
                         userRatingLocation.comment = (string)miLector["comment"];
@@ -58,7 +57,7 @@ namespace MAP_K0_DAL.Handlers
         }
 
 
-        public int deleteUserRatingLocation(int idUser, int idLocation)
+        public int deleteUserRatingLocation(string idUser, int idLocation)
         {
             int filasAfectadas = 0;
 
@@ -74,7 +73,7 @@ namespace MAP_K0_DAL.Handlers
             };
 
 
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = idUser;
+            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.VarChar).Value = idUser;
             miComando.Parameters.Add("@idLocation", System.Data.SqlDbType.Int).Value = idLocation;
 
             try
@@ -113,7 +112,7 @@ namespace MAP_K0_DAL.Handlers
                 Connection = conexion.getConnection()
             };
 
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = userRatingLocation.idUser;
+            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.VarChar).Value = userRatingLocation.idUser;
             miComando.Parameters.Add("@idLocation", System.Data.SqlDbType.VarChar).Value = userRatingLocation.idLocation;
             miComando.Parameters.Add("@stars", System.Data.SqlDbType.VarChar).Value = userRatingLocation.stars;
             miComando.Parameters.Add("@comment", System.Data.SqlDbType.VarChar).Value = userRatingLocation.comment;
@@ -155,7 +154,7 @@ namespace MAP_K0_DAL.Handlers
 
             };
 
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = userRatingLocation.idUser;
+            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.VarChar).Value = userRatingLocation.idUser;
             miComando.Parameters.Add("@idLocation", System.Data.SqlDbType.VarChar).Value = userRatingLocation.idLocation;
             miComando.Parameters.Add("@stars", System.Data.SqlDbType.VarChar).Value = userRatingLocation.stars;
             miComando.Parameters.Add("@comment", System.Data.SqlDbType.VarChar).Value = userRatingLocation.comment;

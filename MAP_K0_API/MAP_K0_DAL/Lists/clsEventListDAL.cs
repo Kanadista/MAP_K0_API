@@ -41,7 +41,7 @@ namespace MAP_K0_DAL.Lists
                         oEvent.id = (int)reader["id"];
                         oEvent.name = (string)reader["name"];
                         oEvent.description = (string)reader["description"];
-                        oEvent.creatorId = (int)reader["creatorID"];
+                        oEvent.creatorId = (string)reader["creatorID"];
                         oEvent.date = (DateTime)reader["date"];        
 
                         list.Add(oEvent);

@@ -20,7 +20,7 @@ namespace MAP_K0_DAL.Lists
 
             SqlCommand command = new SqlCommand
             {
-                CommandText = "SELECT id, nickName, firstName, lastName, address, profilePic, level, levelxp FROM K0_MAP_USERS",
+                CommandText = "SELECT id, nickName, firstName, lastName, address, profilePic, level, levelxp, isEnhanced, creationDate FROM K0_MAP_USERS",
 
                 Connection = connection.getConnection()
 
@@ -39,7 +39,7 @@ namespace MAP_K0_DAL.Lists
                     {
                         oUser = new clsUser();
 
-                        oUser.id = (int)reader["id"];
+                        oUser.id = (string)reader["id"];
                         oUser.nickName = (string)reader["nickName"];
                         oUser.firstName = (string)reader["firstName"];
                         oUser.lastName = (string)reader["lastName"];
@@ -50,7 +50,8 @@ namespace MAP_K0_DAL.Lists
                         }
                         oUser.level = (int)reader["level"];
                         oUser.levelxp = (int)reader["levelxp"];
-
+                        oUser.isEnhanced = (bool)reader["isEnhanced"];
+                        oUser.creationDate = (DateTime)reader["creationDate"];
                         list.Add(oUser);
 
                     }

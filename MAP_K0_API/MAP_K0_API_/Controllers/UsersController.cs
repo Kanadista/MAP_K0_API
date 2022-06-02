@@ -35,7 +35,7 @@ namespace MAP_K0_API_.Controllers
         }
 
         // GET: api/Users/5
-        public clsUser Get(int id)
+        public clsUser Get(string id)
         {
             clsUserHandlerBL oHandler = new clsUserHandlerBL();
             clsUser oUser;
@@ -78,7 +78,7 @@ namespace MAP_K0_API_.Controllers
         }
 
         // PUT: api/Users/5
-        public void Put(int id, [FromBody] clsUser oUser)
+        public void Put(string id, [FromBody] clsUser oUser)
         {
             clsUserHandlerBL oHandler = new clsUserHandlerBL();
 
@@ -102,7 +102,7 @@ namespace MAP_K0_API_.Controllers
         }
 
         // DELETE: api/Users/5
-        public void Delete(int id)
+        public void Delete(string id)
         {
 
             clsUserHandlerBL oHandler = new clsUserHandlerBL();

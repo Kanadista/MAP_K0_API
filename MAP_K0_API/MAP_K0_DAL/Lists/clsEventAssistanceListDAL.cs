@@ -39,7 +39,7 @@ namespace MAP_K0_DAL.Lists
                         eventAssistance = new clsEventAssistance();
 
                         eventAssistance.idEvent = (int)reader["idEvent"];
-                        eventAssistance.idUser = (int)reader["idUser"];
+                        eventAssistance.idUser = (string)reader["idUser"];
                
                         list.Add(eventAssistance);
 

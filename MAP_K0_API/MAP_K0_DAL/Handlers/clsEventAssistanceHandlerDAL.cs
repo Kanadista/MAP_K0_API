@@ -10,7 +10,7 @@ namespace MAP_K0_DAL.Handlers
    public class clsEventAssistanceHandlerDAL
     {
 
-        public clsEventAssistance getEventAssistanceById(int idEvent, int idUser)
+        public clsEventAssistance getEventAssistanceById(int idEvent)
         {
 
             clsEventAssistance eventAssistance = new clsEventAssistance();
@@ -20,13 +20,12 @@ namespace MAP_K0_DAL.Handlers
             SqlCommand miComando = new SqlCommand
             {
 
-                CommandText = "SELECT idEvent, idUser FROM K0_MAP_EVENT_ASSISTANCE WHERE idEvent = @idEvent and idUser = @idUser",
+                CommandText = "SELECT idEvent, idUser FROM K0_MAP_EVENT_ASSISTANCE WHERE idEvent = @idEvent",
 
                 Connection = conexion.getConnection()
             };
 
             miComando.Parameters.Add("@idEvent", System.Data.SqlDbType.Int).Value = idEvent;
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = idUser;
 
             SqlDataReader miLector;
 
@@ -40,7 +39,7 @@ namespace MAP_K0_DAL.Handlers
                     while (miLector.Read())
                     {
                         eventAssistance.idEvent = (int)miLector["idEvent"];
-                        eventAssistance.idUser = (int)miLector["idUser"];
+                        eventAssistance.idUser = (string)miLector["idUser"];
 
                     }
                 }
@@ -59,7 +58,7 @@ namespace MAP_K0_DAL.Handlers
         /// </summary>
         /// <param name="id">ID de la persona que queremos borrar.</param>
         /// <returns>Un int con el numero de filas afectadas.</returns>
-        public int deleteEventAssistance(int idEvent, int idUser)
+        public int deleteEventAssistance(int idEvent, string idUser)
         {
             int filasAfectadas = 0;
 
@@ -76,7 +75,7 @@ namespace MAP_K0_DAL.Handlers
             };
 
             miComando.Parameters.Add("@idEvent", System.Data.SqlDbType.Int).Value = idEvent;
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = idUser;
+            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.VarChar).Value = idUser;
 
             try
             {
@@ -115,7 +114,7 @@ namespace MAP_K0_DAL.Handlers
             };
 
             miComando.Parameters.Add("@idEvent", System.Data.SqlDbType.Int).Value = eventAssistance.idEvent;
-            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.Int).Value = eventAssistance.idUser;
+            miComando.Parameters.Add("@idUser", System.Data.SqlDbType.VarChar).Value = eventAssistance.idUser;
  
             try
             {

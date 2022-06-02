@@ -8,14 +8,14 @@ namespace MAP_K0_BL.Handlers
 {
    public class clsUserHandlerBL
     {
-        public clsUser getUserById(int id)
+        public clsUser getUserById(string id)
         {
             clsUserHandlerDAL oHandler = new clsUserHandlerDAL();
             return oHandler.getUserById(id);
 
         }
 
-        public int deleteUser(int id)
+        public int deleteUser(string id)
         {
             clsUserHandlerDAL oHandler = new clsUserHandlerDAL();
             return oHandler.deleteUser(id);

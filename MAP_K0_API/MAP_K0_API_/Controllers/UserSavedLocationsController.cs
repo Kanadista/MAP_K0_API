@@ -12,7 +12,7 @@ namespace MAP_K0_API_.Controllers
 {
     public class UserSavedLocationsController : ApiController
     {
-        // GET: api/UserRatingLocation
+        // GET: api/UserSavedLocations
         public IEnumerable<clsUserSavedLocations> Get()
         {
 
@@ -34,8 +34,8 @@ namespace MAP_K0_API_.Controllers
             return list;
         }
 
-        // GET: api/UserRatingLocation/5
-        public clsUserSavedLocations Get(int idUser, int idLocation)
+        // GET: api/UserSavedLocations/5
+        public clsUserSavedLocations Get(string idUser)
         {
             clsUserSavedLocationsHandlerBL oHandler = new clsUserSavedLocationsHandlerBL();
             clsUserSavedLocations oUserSavedLocation;
@@ -43,7 +43,7 @@ namespace MAP_K0_API_.Controllers
             try
             {
 
-                oUserSavedLocation = oHandler.getUserSavedLocationById(idUser, idLocation);
+                oUserSavedLocation = oHandler.getUserSavedLocationById(idUser);
 
             }
 
@@ -57,7 +57,7 @@ namespace MAP_K0_API_.Controllers
             return oUserSavedLocation;
         }
 
-        // POST: api/UserRatingLocation
+        // POST: api/UserSavedLocations
         public void Post([FromBody] clsUserSavedLocations oUserSavedLocation)
         {
             clsUserSavedLocationsHandlerBL oHandler = new clsUserSavedLocationsHandlerBL();
@@ -77,7 +77,7 @@ namespace MAP_K0_API_.Controllers
 
         }
 
-        // PUT: api/UserRatingLocation/5
+        // PUT: api/UserSavedLocations/5
         public void Put(int idLocation, [FromBody] clsUserSavedLocations oUserSavedLocation)
         {
             clsUserSavedLocationsHandlerBL oHandler = new clsUserSavedLocationsHandlerBL();
@@ -101,8 +101,8 @@ namespace MAP_K0_API_.Controllers
 
         }
 
-        // DELETE: api/UserRatingLocation/5
-        public void Delete(int idUser, int idLocation)
+        // DELETE: api/UserSavedLocations/5
+        public void Delete(string idUser, int idLocation)
         {
 
             clsUserSavedLocationsHandlerBL oHandler = new clsUserSavedLocationsHandlerBL();

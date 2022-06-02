@@ -35,7 +35,7 @@ namespace MAP_K0_API_.Controllers
         }
 
         // GET: api/UserRatingLocation/5
-        public clsUserRatingLocation Get(int idUser, int idLocation)
+        public clsUserRatingLocation Get(int idLocation)
         {
             clsUserRatingLocationHandlerBL oHandler = new clsUserRatingLocationHandlerBL();
             clsUserRatingLocation oUserRatingLocation;
@@ -43,7 +43,7 @@ namespace MAP_K0_API_.Controllers
             try
             {
 
-                oUserRatingLocation = oHandler.getUserRatingLocationById(idUser, idLocation);
+                oUserRatingLocation = oHandler.getUserRatingLocationById(idLocation);
 
             }
 
@@ -58,6 +58,7 @@ namespace MAP_K0_API_.Controllers
         }
 
         // POST: api/UserRatingLocation
+        [HttpPost]
         public void Post([FromBody] clsUserRatingLocation oUserRatingLocation)
         {
             clsUserRatingLocationHandlerBL oHandler = new clsUserRatingLocationHandlerBL();
@@ -78,6 +79,8 @@ namespace MAP_K0_API_.Controllers
         }
 
         // PUT: api/UserRatingLocation/5
+        [Route("api/UserRatingLocation/{idLocation}")]
+        [HttpPut]
         public void Put(int idLocation, [FromBody] clsUserRatingLocation oUserRatingLocation)
         {
             clsUserRatingLocationHandlerBL oHandler = new clsUserRatingLocationHandlerBL();
@@ -102,7 +105,8 @@ namespace MAP_K0_API_.Controllers
         }
 
         // DELETE: api/UserRatingLocation/5
-        public void Delete(int idUser, int idLocation)
+        [HttpDelete]
+        public void Delete(string idUser, int idLocation)
         {
 
             clsUserRatingLocationHandlerBL oHandler = new clsUserRatingLocationHandlerBL();

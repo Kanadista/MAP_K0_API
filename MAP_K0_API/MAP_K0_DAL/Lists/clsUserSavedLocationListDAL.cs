@@ -39,7 +39,7 @@ namespace MAP_K0_DAL.Lists
                     {
                         userSavedLocation = new clsUserSavedLocations();
 
-                        userSavedLocation.idUser = (int)reader["idUser"];
+                        userSavedLocation.idUser = (string)reader["idUser"];
                         userSavedLocation.idLocation = (int)reader["idLocation"];
 
                         list.Add(userSavedLocation);

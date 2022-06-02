@@ -22,7 +22,6 @@ namespace MAP_K0_API_.Controllers
             try
             {
                 list = locationImageList.getListBL();
-
             }
 
             catch (Exception e)

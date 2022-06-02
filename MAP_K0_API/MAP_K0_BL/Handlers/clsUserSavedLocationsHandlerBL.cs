@@ -8,14 +8,14 @@ namespace MAP_K0_BL.Handlers
 {
     public class clsUserSavedLocationsHandlerBL
     {
-        public clsUserSavedLocations getUserSavedLocationById(int idUser, int idLocation)
+        public clsUserSavedLocations getUserSavedLocationById(string idUser)
         {
             clsUserSavedLocationHandlerDAL oHandler = new clsUserSavedLocationHandlerDAL();
-            return oHandler.getUserSavedLocationById(idUser, idLocation);
+            return oHandler.getUserSavedLocationById(idUser);
 
         }
 
-        public int deleteUserSavedLocation(int idUser, int idLocation)
+        public int deleteUserSavedLocation(string idUser, int idLocation)
         {
             clsUserSavedLocationHandlerDAL oHandler = new clsUserSavedLocationHandlerDAL();
             return oHandler.deleteUserSavedLocation(idUser, idLocation);

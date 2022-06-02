@@ -35,7 +35,7 @@ namespace MAP_K0_API_.Controllers
         }
 
         // GET: api/EventsAssistance/5
-        public clsEventAssistance Get(int idEvent, int idUser)
+        public clsEventAssistance Get(int idEvent)
         {
             clsEventAssistanceHandlerBL oHandler = new clsEventAssistanceHandlerBL();
             clsEventAssistance oEvent;
@@ -43,7 +43,7 @@ namespace MAP_K0_API_.Controllers
             try
             {
 
-                oEvent = oHandler.getEventAssistanceById(idEvent, idUser);
+                oEvent = oHandler.getEventAssistanceById(idEvent);
 
             }
 
@@ -102,7 +102,7 @@ namespace MAP_K0_API_.Controllers
         }
 
         // DELETE: api/EventsAssistance/5
-        public void Delete(int idEvent, int idUser)
+        public void Delete(int idEvent, string idUser)
         {
 
             clsEventAssistanceHandlerBL oHandler = new clsEventAssistanceHandlerBL();

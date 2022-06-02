@@ -43,7 +43,7 @@ namespace MAP_K0_DAL.Handlers
                         location.description = (string)miLector["description"];
                         location.latitud = (decimal)miLector["latitud"];
                         location.longitude = (decimal)miLector["longitude"];
-                        location.creatorId = (int)miLector["creatorID"];
+                        location.creatorId = (string)miLector["creatorID"];
 
                     }
                 }
@@ -120,7 +120,7 @@ namespace MAP_K0_DAL.Handlers
             miComando.Parameters.Add("@description", System.Data.SqlDbType.VarChar).Value = location.description;
             miComando.Parameters.Add("@creatorID", System.Data.SqlDbType.Decimal).Value = location.latitud;
             miComando.Parameters.Add("@creatorID", System.Data.SqlDbType.Decimal).Value = location.longitude;
-            miComando.Parameters.Add("@date", System.Data.SqlDbType.Int).Value = location.creatorId;
+            miComando.Parameters.Add("@date", System.Data.SqlDbType.VarChar).Value = location.creatorId;
 
             try
             {
@@ -153,18 +153,17 @@ namespace MAP_K0_DAL.Handlers
             SqlCommand miComando = new SqlCommand
             {
 
-                CommandText = "INSERT INTO K0_MAP_LOCATIONS(id, name, description, latitud, longitude, creatorID) VALUES (@id, @name, @description, @latitud, @longitude, @creatorId)",
+                CommandText = "INSERT INTO K0_MAP_LOCATIONS(name, description, latitud, longitude, creatorID) VALUES (@name, @description, @latitud, @longitude, @creatorId)",
 
                 Connection = conexion.getConnection()
 
             };
 
-            miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = location.id;
             miComando.Parameters.Add("@name", System.Data.SqlDbType.VarChar).Value = location.name;
             miComando.Parameters.Add("@description", System.Data.SqlDbType.VarChar).Value = location.description;
-            miComando.Parameters.Add("@creatorID", System.Data.SqlDbType.Decimal).Value = location.latitud;
-            miComando.Parameters.Add("@creatorID", System.Data.SqlDbType.Decimal).Value = location.longitude;
-            miComando.Parameters.Add("@date", System.Data.SqlDbType.Int).Value = location.creatorId;
+            miComando.Parameters.Add("@latitud", System.Data.SqlDbType.Decimal).Value = location.latitud;
+            miComando.Parameters.Add("@longitude", System.Data.SqlDbType.Decimal).Value = location.longitude;
+            miComando.Parameters.Add("@creatorId", System.Data.SqlDbType.VarChar).Value = location.creatorId;
 
 
             try
