@@ -11,8 +11,9 @@ namespace MAP_K0_DAL.Lists
     {
         public List<clsUserRatingLocation> userRatingLocationList = new List<clsUserRatingLocation>();
 
-        public List<clsUserRatingLocation> getList(List<clsUserRatingLocation> list)
+        public List<clsUserRatingLocation> getList(int idLocation)
         {
+            List<clsUserRatingLocation> list = new List<clsUserRatingLocation>();
 
             clsUserRatingLocation userRatingLocation;
 
@@ -20,11 +21,14 @@ namespace MAP_K0_DAL.Lists
 
             SqlCommand command = new SqlCommand
             {
-                CommandText = "SELECT idUser, idLocation, stars, comment FROM K0_MAP_USER_RATING_LOCATIONS",
+                CommandText = "SELECT idUser, idLocation, stars, comment FROM K0_MAP_USER_RATING_LOCATIONS WHERE idLocation = @idLocation",
 
                 Connection = connection.getConnection()
 
             };
+
+
+            command.Parameters.Add("@idLocation", System.Data.SqlDbType.Int).Value = idLocation;
 
             SqlDataReader reader;
 
@@ -59,20 +63,10 @@ namespace MAP_K0_DAL.Lists
         }
 
 
-        public void setList()
+        public List<clsUserRatingLocation> getListDAL(int id)
         {
-            this.userRatingLocationList = getList(userRatingLocationList);
-        }
-
-        public List<clsUserRatingLocation> getListDAL()
-        {
-            return userRatingLocationList;
-        }
-
-        public clsUserRatingLocationListDAL()
-        {
-            setList();
-        }
+            return getList(id);
+        } 
     }
 }
 

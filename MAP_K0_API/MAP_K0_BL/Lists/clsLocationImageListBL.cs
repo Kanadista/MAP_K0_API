@@ -8,23 +8,13 @@ namespace MAP_K0_BL.Lists
 {
     public class clsLocationImageListBL
     {
-        public List<clsLocationImage> locationImageList = new List<clsLocationImage>();
-
+        
         clsLocationImageListDAL listDAL = new clsLocationImageListDAL();
 
-        public void setListBL()
+        public List<clsLocationImage> getListBL(int id)
         {
-            this.locationImageList = listDAL.getListDAL();
+            return listDAL.getList(id);
         }
 
-        public List<clsLocationImage> getListBL()
-        {
-            return this.locationImageList;
-        }
-
-        public clsLocationImageListBL()
-        {
-            setListBL();
-        }
     }
 }

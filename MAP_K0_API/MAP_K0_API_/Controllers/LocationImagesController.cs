@@ -13,7 +13,9 @@ namespace MAP_K0_API_.Controllers
     public class LocationImagesController : ApiController
     {
         // GET: api/LocationImages
-        public IEnumerable<clsLocationImage> Get()
+        [Route("api/LocationImages/{idLocation}")]
+        [HttpGet]
+        public IEnumerable<clsLocationImage> Get(int idLocation)
         {
 
             clsLocationImageListBL locationImageList = new clsLocationImageListBL();
@@ -21,7 +23,7 @@ namespace MAP_K0_API_.Controllers
 
             try
             {
-                list = locationImageList.getListBL();
+                list = locationImageList.getListBL(idLocation);
             }
 
             catch (Exception e)

@@ -6,14 +6,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web;
+
 using System.Web.Http;
 
 namespace MAP_K0_API_.Controllers
 {
     public class UserRatingLocationController : ApiController
     {
-        // GET: api/UserRatingLocation
-        public IEnumerable<clsUserRatingLocation> Get()
+        // GET: api/UserRatingLocation/5
+        [Route("api/UserRatingLocation/{idLocation}")]
+        [HttpGet]
+        public IEnumerable<clsUserRatingLocation> Get(int idLocation)
         {
 
             clsUserRatingLocationListBL userRatingLocationList = new clsUserRatingLocationListBL();
@@ -21,8 +24,7 @@ namespace MAP_K0_API_.Controllers
 
             try
             {
-                list = userRatingLocationList.getListBL();
-
+                list = userRatingLocationList.getListBL(idLocation);
             }
 
             catch (Exception e)
@@ -34,48 +36,36 @@ namespace MAP_K0_API_.Controllers
             return list;
         }
 
-        // GET: api/UserRatingLocation/5
-        public clsUserRatingLocation Get(int idLocation)
-        {
-            clsUserRatingLocationHandlerBL oHandler = new clsUserRatingLocationHandlerBL();
-            clsUserRatingLocation oUserRatingLocation;
-
-            try
-            {
-
-                oUserRatingLocation = oHandler.getUserRatingLocationById(idLocation);
-
-            }
-
-            catch (Exception e)
-            {
-
-                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
-
-            }
-
-            return oUserRatingLocation;
-        }
-
         // POST: api/UserRatingLocation
         [HttpPost]
-        public void Post([FromBody] clsUserRatingLocation oUserRatingLocation)
+        public IHttpActionResult Post([FromBody] clsUserRatingLocation oUserRatingLocation)
         {
             clsUserRatingLocationHandlerBL oHandler = new clsUserRatingLocationHandlerBL();
+            IHttpActionResult result;
+            int rowsAffected = 0;
 
             try
             {
 
-                oHandler.createUserRatingLocation(oUserRatingLocation);
+                rowsAffected = oHandler.createUserRatingLocation(oUserRatingLocation);
+
+                if(rowsAffected == 0)
+                {
+                    result = NotFound();
+                }
+                else
+                {
+                    result = Ok(rowsAffected);
+                }
             }
 
             catch (Exception e)
             {
-
-                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+         
+                result = BadRequest("Bad request");
 
             }
-
+            return result;
         }
 
         // PUT: api/UserRatingLocation/5

@@ -59,14 +59,25 @@ namespace MAP_K0_API_.Controllers
 
             // POST: api/Locations
             [HttpPost]
-            public void Post([FromBody] clsLocation oLocation)
+            public IHttpActionResult Post([FromBody] clsLocation oLocation)
             {
                 clsLocationHandlerBL oHandler = new clsLocationHandlerBL();
 
+                IHttpActionResult result;
+                 int rowsAffected;
                 try
                 {
 
-                    oHandler.createLocation(oLocation);
+                    rowsAffected = oHandler.createLocation(oLocation);
+
+                    if(rowsAffected == 0)
+                {
+                    result = NotFound();
+                }
+                else
+                {
+                    result = Ok();
+                }
                 }
 
                 catch (Exception e)
@@ -75,6 +86,8 @@ namespace MAP_K0_API_.Controllers
                     throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
 
                 }
+
+             return result;
 
             }
 

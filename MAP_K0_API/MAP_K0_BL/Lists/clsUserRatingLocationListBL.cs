@@ -12,19 +12,10 @@ namespace MAP_K0_BL.Lists
 
         clsUserRatingLocationListDAL listDAL = new clsUserRatingLocationListDAL();
 
-        public void setListBL()
+        public List<clsUserRatingLocation> getListBL(int id)
         {
-            this.clsUserRatingLocationList = listDAL.getListDAL();
+            return listDAL.getListDAL(id);
         }
 
-        public List<clsUserRatingLocation> getListBL()
-        {
-            return this.clsUserRatingLocationList;
-        }
-
-        public clsUserRatingLocationListBL()
-        {
-            setListBL();
-        }
     }
 }

@@ -13,6 +13,7 @@ namespace MAP_K0_API_.Controllers
     public class UserSavedLocationsController : ApiController
     {
         // GET: api/UserSavedLocations
+     
         public IEnumerable<clsUserSavedLocations> Get()
         {
 

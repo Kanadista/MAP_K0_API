@@ -9,23 +9,23 @@ namespace MAP_K0_DAL.Lists
 {
     public class clsLocationImageListDAL
     {
-        public List<clsLocationImage> locationImageList = new List<clsLocationImage>();
 
-        public List<clsLocationImage> getList(List<clsLocationImage> list)
+        public List<clsLocationImage> getList(int idLocation)
         {
-
+            List<clsLocationImage> list = new List<clsLocationImage>();
             clsLocationImage locationImage;
 
             clsMyConnection connection = new clsMyConnection();
 
             SqlCommand command = new SqlCommand
             {
-                CommandText = "SELECT idLocation, idImage, image FROM K0_MAP_LOCATION_IMAGES",
+                CommandText = "SELECT idLocation, idImage, image FROM K0_MAP_LOCATION_IMAGES WHERE idLocation = @idLocation",
 
                 Connection = connection.getConnection()
 
             };
 
+            command.Parameters.Add("@idLocation", System.Data.SqlDbType.Int).Value = idLocation;
             SqlDataReader reader;
 
             try
@@ -58,19 +58,10 @@ namespace MAP_K0_DAL.Lists
         }
 
 
-        public void setList()
+        public List<clsLocationImage> getListDAL(int id)
         {
-            this.locationImageList = getList(locationImageList);
+            return getList(id);
         }
 
-        public List<clsLocationImage> getListDAL()
-        {
-            return locationImageList;
-        }
-
-        public clsLocationImageListDAL()
-        {
-            setList();
-        }
     }
 }
