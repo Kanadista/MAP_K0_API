@@ -56,6 +56,7 @@ D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\MAP_K0_Entities.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\Microsoft.Web.Infrastructure.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\Newtonsoft.Json.dll
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Data.SqlClient.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Net.Http.Formatting.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Web.Helpers.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Web.Http.dll
@@ -70,6 +71,7 @@ D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\WebGrease.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\MAP_K0_DAL.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\MAP_K0_BL.pdb
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\MAP_K0_Entities.pdb
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Data.SqlClient.xml
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\Newtonsoft.Json.xml
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Net.Http.Formatting.xml
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Web.Helpers.xml
@@ -99,5 +101,3 @@ D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\obj\Debug\MAP_K0_API_.c
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\obj\Debug\MAP_K0_API_.csproj.CopyComplete
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\obj\Debug\MAP_K0_API_.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\obj\Debug\MAP_K0_API_.pdb
-D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Data.SqlClient.dll
-D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_API_\bin\System.Data.SqlClient.xml

@@ -21,7 +21,7 @@ namespace MAP_K0_DAL.Handlers
             {
 
 
-                CommandText = "SELECT id, name, description, creatorID, date FROM K0_MAP_EVENTS WHERE ID = @id",
+                CommandText = "SELECT id, name, description, address, type, creatorID, date FROM K0_MAP_EVENTS WHERE ID = @id",
 
                 Connection = conexion.getConnection()
             };
@@ -42,6 +42,8 @@ namespace MAP_K0_DAL.Handlers
                         oEvent.id = (int)miLector["id"];
                         oEvent.name = (string)miLector["name"];
                         oEvent.description = (string)miLector["description"];
+                        oEvent.address = (string)miLector["address"];
+                        oEvent.type = (int)miLector["type"];
                         oEvent.creatorId = (string)miLector["creatorID"];
                         oEvent.date = (DateTime)miLector["date"];
 
@@ -152,7 +154,7 @@ namespace MAP_K0_DAL.Handlers
             SqlCommand miComando = new SqlCommand
             {
 
-                CommandText = "INSERT INTO K0_MAP_EVENTS(name, description, creatorID, date) VALUES (@id, @name, @description, @creatorId, @date)",
+                CommandText = "INSERT INTO K0_MAP_EVENTS(name, description, address, type, creatorID, date) VALUES (@id, @name, @description, @address, @type, @creatorId, @date)",
 
                 Connection = conexion.getConnection()
 
@@ -161,6 +163,8 @@ namespace MAP_K0_DAL.Handlers
 
             miComando.Parameters.Add("@name", System.Data.SqlDbType.VarChar).Value = oEvent.name;
             miComando.Parameters.Add("@description", System.Data.SqlDbType.VarChar).Value = oEvent.description;
+            miComando.Parameters.Add("@address", System.Data.SqlDbType.VarChar).Value = oEvent.address;
+            miComando.Parameters.Add("@type", System.Data.SqlDbType.Int).Value = oEvent.type;
             miComando.Parameters.Add("@creatorID", System.Data.SqlDbType.VarChar).Value = oEvent.creatorId;
             miComando.Parameters.Add("@date", System.Data.SqlDbType.DateTime).Value = oEvent.date;
 

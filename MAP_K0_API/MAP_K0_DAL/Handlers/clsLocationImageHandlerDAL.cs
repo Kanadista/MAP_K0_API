@@ -69,8 +69,8 @@ namespace MAP_K0_DAL.Handlers
                 Connection = conexion.getConnection()
             };
 
+            miComando.Parameters.Add("@idLocationImage", System.Data.SqlDbType.Int).Value = locationImage.idLocationImage;
             miComando.Parameters.Add("@idLocation", System.Data.SqlDbType.Int).Value = locationImage.idLocation;
-            miComando.Parameters.Add("@idImage", System.Data.SqlDbType.Int).Value = locationImage.idImage;
             miComando.Parameters.Add("@image", System.Data.SqlDbType.VarBinary).Value = locationImage.image;
 
             try
@@ -104,15 +104,14 @@ namespace MAP_K0_DAL.Handlers
             SqlCommand miComando = new SqlCommand
             {
 
-                CommandText = "INSERT INTO K0_MAP_EVENT_ASSISTANCE(idLocation, idImage, image) VALUES (@idLocation, @idImage, @image)",
+                CommandText = "INSERT INTO K0_MAP_LOCATION_IMAGES(idLocation, image) VALUES (@idLocation, @image)",
 
                 Connection = conexion.getConnection()
 
             };
 
             miComando.Parameters.Add("@idLocation", System.Data.SqlDbType.Int).Value = locationImage.idLocation;
-            miComando.Parameters.Add("@idImage", System.Data.SqlDbType.Int).Value = locationImage.idImage;
-            miComando.Parameters.Add("@image", System.Data.SqlDbType.VarChar).Value = locationImage.image;
+            miComando.Parameters.Add("@image", System.Data.SqlDbType.VarBinary).Value = locationImage.image;
 
             try
             {

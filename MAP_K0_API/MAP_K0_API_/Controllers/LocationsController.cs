@@ -8,11 +8,13 @@ using System.Net;
 using System.Web;
 using System.Web.Http;
 
+
 namespace MAP_K0_API_.Controllers
 {
         public class LocationsController : ApiController
         {
             // GET: api/Locations
+            [System.Web.Http.HttpGet]
             public IEnumerable<clsLocation> Get()
             {
 
@@ -34,8 +36,32 @@ namespace MAP_K0_API_.Controllers
                 return list;
             }
 
-            // GET: api/Locations/5
-            public clsLocation Get(int id)
+        [Route("api/LocationUser/{id}")]
+        [HttpGet]
+            public clsLocation GetUser(string id)
+            {
+
+            clsLocationHandlerBL locationHandler = new clsLocationHandlerBL();
+            clsLocation oLocation;
+
+            try
+            {
+                oLocation = locationHandler.getLastLocationByCreatorId(id);
+
+            }
+
+            catch (Exception e)
+            {
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+
+            }
+
+            return oLocation;
+        }
+
+
+        // GET: api/Locations/5
+        public clsLocation Get(int id)
             {
                 clsLocationHandlerBL oHandler = new clsLocationHandlerBL();
                 clsLocation oLocation;

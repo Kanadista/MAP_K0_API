@@ -57,6 +57,53 @@ namespace MAP_K0_DAL.Handlers
             return location;
         }
 
+        public clsLocation getLastLocationByCreatorId(string id)
+        {
+
+            clsLocation location = new clsLocation();
+
+            clsMyConnection conexion = new clsMyConnection();
+
+            SqlCommand miComando = new SqlCommand
+            {
+
+                CommandText = "SELECT TOP 1 id, name, description, latitud, longitude, creatorID FROM K0_MAP_LOCATIONS WHERE creatorId = @id ORDER BY id DESC",
+
+                Connection = conexion.getConnection()
+            };
+
+            miComando.Parameters.Add("@id", System.Data.SqlDbType.VarChar).Value = id;
+
+            SqlDataReader miLector;
+
+            try
+            {
+
+                miLector = miComando.ExecuteReader();
+
+                if (miLector.HasRows)
+                {
+                    while (miLector.Read())
+                    {
+                        location.id = (int)miLector["id"];
+                        location.name = (string)miLector["name"];
+                        location.description = (string)miLector["description"];
+                        location.latitud = (decimal)miLector["latitud"];
+                        location.longitude = (decimal)miLector["longitude"];
+                        location.creatorId = (string)miLector["creatorID"];
+
+                    }
+                }
+            }
+            catch (SqlException excepcion)
+            {
+
+                throw excepcion;
+            }
+
+            return location;
+        }
+
         /// <summary>
         /// Método que borra una persona de la base de datos mediante su ID
         /// </summary>

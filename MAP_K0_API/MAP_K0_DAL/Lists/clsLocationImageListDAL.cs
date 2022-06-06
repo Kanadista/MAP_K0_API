@@ -19,7 +19,7 @@ namespace MAP_K0_DAL.Lists
 
             SqlCommand command = new SqlCommand
             {
-                CommandText = "SELECT idLocation, idImage, image FROM K0_MAP_LOCATION_IMAGES WHERE idLocation = @idLocation",
+                CommandText = "SELECT idLocationImage, idLocation, image FROM K0_MAP_LOCATION_IMAGES WHERE idLocation = @idLocation",
 
                 Connection = connection.getConnection()
 
@@ -39,8 +39,8 @@ namespace MAP_K0_DAL.Lists
                     {
                         locationImage = new clsLocationImage();
 
+                        locationImage.idLocationImage = (int)reader["idLocationImage"];
                         locationImage.idLocation = (int)reader["idLocation"];
-                        locationImage.idImage = (int)reader["idImage"];
                         locationImage.image = (byte[])reader["image"];
               
                         list.Add(locationImage);

@@ -15,6 +15,12 @@ namespace MAP_K0_BL.Handlers
 
         }
 
+        public clsLocation getLastLocationByCreatorId(string id)
+        {
+            clsLocationHandlerDAL oHandler = new clsLocationHandlerDAL();
+            return oHandler.getLastLocationByCreatorId(id);
+        }
+
         public int deleteLocation(int id)
         {
             clsLocationHandlerDAL oHandler = new clsLocationHandlerDAL();

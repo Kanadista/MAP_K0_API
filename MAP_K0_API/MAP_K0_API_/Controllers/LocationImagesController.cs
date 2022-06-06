@@ -37,6 +37,7 @@ namespace MAP_K0_API_.Controllers
 
 
         // POST: api/LocationImages
+        [HttpPost]
         public void Post([FromBody] clsLocationImage oLocationImage)
         {
             clsLocationImageHandlerBL oHandler = new clsLocationImageHandlerBL();

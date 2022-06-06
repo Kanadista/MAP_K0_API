@@ -19,7 +19,7 @@ namespace MAP_K0_DAL.Lists
 
             SqlCommand command = new SqlCommand
             {
-                CommandText = "SELECT id, name, description, creatorID, date FROM K0_MAP_EVENTS",
+                CommandText = "SELECT id, name, description, address, type, creatorID, date FROM K0_MAP_EVENTS",
 
                 Connection = connection.getConnection()
 
@@ -41,6 +41,8 @@ namespace MAP_K0_DAL.Lists
                         oEvent.id = (int)reader["id"];
                         oEvent.name = (string)reader["name"];
                         oEvent.description = (string)reader["description"];
+                        oEvent.address = (string)reader["address"];
+                        oEvent.type = (int)reader["type"];
                         oEvent.creatorId = (string)reader["creatorID"];
                         oEvent.date = (DateTime)reader["date"];        
 
