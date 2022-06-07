@@ -11,21 +11,22 @@ namespace MAP_K0_DAL.Lists
     {
         public List<clsUserSavedLocations> userSavedLocationList = new List<clsUserSavedLocations>();
 
-        public List<clsUserSavedLocations> getList(List<clsUserSavedLocations> list)
+        public List<clsUserSavedLocations> getList(String idUser)
         {
 
             clsUserSavedLocations userSavedLocation;
-
+            List<clsUserSavedLocations> list = new List<clsUserSavedLocations>();
             clsMyConnection connection = new clsMyConnection();
 
             SqlCommand command = new SqlCommand
             {
-                CommandText = "SELECT idUser, idLocation FROM K0_MAP_USERS_SAVED_LOCATIONS",
+                CommandText = "SELECT idUser, idLocation FROM K0_MAP_USER_SAVED_LOCATIONS WHERE idUser = @idUser",
 
                 Connection = connection.getConnection()
 
             };
 
+            command.Parameters.Add("@idUser", System.Data.SqlDbType.VarChar).Value = idUser;
             SqlDataReader reader;
 
             try
@@ -57,19 +58,9 @@ namespace MAP_K0_DAL.Lists
         }
 
 
-        public void setList()
-        {
-            this.userSavedLocationList = getList(userSavedLocationList);
-        }
-
-        public List<clsUserSavedLocations> getListDAL()
+        public List<clsUserSavedLocations> getListDAL(String idUser)
         {
             return userSavedLocationList;
-        }
-
-        public clsUserSavedLocationListDAL()
-        {
-            setList();
         }
 
     }

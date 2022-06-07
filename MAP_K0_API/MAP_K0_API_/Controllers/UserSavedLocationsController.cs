@@ -12,22 +12,25 @@ namespace MAP_K0_API_.Controllers
 {
     public class UserSavedLocationsController : ApiController
     {
-        // GET: api/UserSavedLocations
-     
-        public IEnumerable<clsUserSavedLocations> Get()
+       
+        // GET: api/UserSavedLocations/5
+        [Route("api/UserSavedLocations/{idUser}")]
+        [HttpGet]
+        public IEnumerable<clsUserSavedLocations> Get(string idUser)
         {
-
-            clsUserSavedLocationListBL userSavedLocationList = new clsUserSavedLocationListBL();
+            clsUserSavedLocationListBL oList = new clsUserSavedLocationListBL();
             List<clsUserSavedLocations> list = new List<clsUserSavedLocations>();
 
             try
             {
-                list = userSavedLocationList.getListBL();
+
+                list = oList.getListBL(idUser);
 
             }
 
             catch (Exception e)
             {
+
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
 
             }
@@ -35,38 +38,27 @@ namespace MAP_K0_API_.Controllers
             return list;
         }
 
-        // GET: api/UserSavedLocations/5
-        public clsUserSavedLocations Get(string idUser)
-        {
-            clsUserSavedLocationsHandlerBL oHandler = new clsUserSavedLocationsHandlerBL();
-            clsUserSavedLocations oUserSavedLocation;
-
-            try
-            {
-
-                oUserSavedLocation = oHandler.getUserSavedLocationById(idUser);
-
-            }
-
-            catch (Exception e)
-            {
-
-                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
-
-            }
-
-            return oUserSavedLocation;
-        }
-
         // POST: api/UserSavedLocations
-        public void Post([FromBody] clsUserSavedLocations oUserSavedLocation)
+        [HttpPost]
+        public IHttpActionResult Post([FromBody] clsUserSavedLocations oUserSavedLocation)
         {
             clsUserSavedLocationsHandlerBL oHandler = new clsUserSavedLocationsHandlerBL();
+            IHttpActionResult result;
+            int rowsAffected;
 
             try
             {
 
-                oHandler.createUserSavedLocation(oUserSavedLocation);
+               rowsAffected = oHandler.createUserSavedLocation(oUserSavedLocation);
+
+                if (rowsAffected == 0)
+                {
+                    result = NotFound();
+                }
+                else
+                {
+                    result = Ok();
+                }
             }
 
             catch (Exception e)
@@ -75,7 +67,7 @@ namespace MAP_K0_API_.Controllers
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
 
             }
-
+            return result;
         }
 
         // PUT: api/UserSavedLocations/5

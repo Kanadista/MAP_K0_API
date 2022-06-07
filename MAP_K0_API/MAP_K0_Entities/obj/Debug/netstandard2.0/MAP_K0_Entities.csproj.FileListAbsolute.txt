@@ -15,3 +15,4 @@ D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstanda
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstandard2.0\MAP_K0_Entities.csproj.CoreCompileInputs.cache
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstandard2.0\MAP_K0_Entities.dll
 D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstandard2.0\MAP_K0_Entities.pdb
+D:\Programacion-GitHub\MAP_K0_API\MAP_K0_API\MAP_K0_Entities\obj\Debug\netstandard2.0\MAP_K0_Entities.csprojAssemblyReference.cache

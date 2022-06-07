@@ -154,7 +154,7 @@ namespace MAP_K0_DAL.Handlers
             SqlCommand miComando = new SqlCommand
             {
 
-                CommandText = "INSERT INTO K0_MAP_EVENTS(name, description, address, type, creatorID, date) VALUES (@id, @name, @description, @address, @type, @creatorId, @date)",
+                CommandText = "INSERT INTO K0_MAP_EVENTS(name, description, address, type, creatorID, date) VALUES (@name, @description, @address, @type, @creatorId, @date)",
 
                 Connection = conexion.getConnection()
 

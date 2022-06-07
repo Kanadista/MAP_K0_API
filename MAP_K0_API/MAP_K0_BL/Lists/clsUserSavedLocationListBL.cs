@@ -9,22 +9,10 @@ namespace MAP_K0_BL.Lists
    public class clsUserSavedLocationListBL
     {
         public List<clsUserSavedLocations> clsUserSavedLocationList = new List<clsUserSavedLocations>();
-
-        clsUserSavedLocationListDAL listDAL = new clsUserSavedLocationListDAL();
-
-        public void setListBL()
+        clsUserSavedLocationListDAL listDal = new clsUserSavedLocationListDAL();
+        public List<clsUserSavedLocations> getListBL(String idUser)
         {
-            this.clsUserSavedLocationList = listDAL.getListDAL();
-        }
-
-        public List<clsUserSavedLocations> getListBL()
-        {
-            return this.clsUserSavedLocationList;
-        }
-
-        public clsUserSavedLocationListBL()
-        {
-            setListBL();
+            return listDal.getList(idUser);
         }
     }
 }

@@ -58,15 +58,25 @@ namespace MAP_K0_API_.Controllers
             }
 
             // POST: api/Events
-            public void Post([FromBody] clsEvent oEvent)
+            public IHttpActionResult Post([FromBody] clsEvent oEvent)
             {
             clsEventsHandlerBL oHandler = new clsEventsHandlerBL();
+            IHttpActionResult result;
+            int rowsAffected;
 
             try
                 {
 
-                oHandler.createEvent(oEvent);
+                rowsAffected = oHandler.createEvent(oEvent);
+                if (rowsAffected == 0)
+                {
+                    result = NotFound();
                 }
+                else
+                {
+                    result = Ok();
+                }
+            }
 
                 catch (Exception e)
                 {
@@ -75,6 +85,7 @@ namespace MAP_K0_API_.Controllers
 
                 }
 
+            return result;
             }
 
             // PUT: api/Events/5
