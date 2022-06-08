@@ -21,7 +21,7 @@ namespace MAP_K0_DAL.Handlers
             {
 
 
-                CommandText = "SELECT id, nickName, firstName, lastName, address, profilePic, level, levelxp FROM K0_MAP_USERS WHERE ID = @id",
+                CommandText = "SELECT id, nickName, firstName, lastName, address FROM K0_MAP_USERS WHERE ID = @id",
 
                 Connection = conexion.getConnection()
             };
@@ -40,14 +40,10 @@ namespace MAP_K0_DAL.Handlers
                     while (miLector.Read())
                     {
                         oUser.id = (string)miLector["id"];
-                        oUser.nickName = (string)miLector["name"];
+                        oUser.email = (string)miLector["email"];
                         oUser.firstName = (string)miLector["firstName"];
                         oUser.lastName = (string)miLector["lastName"];
                         oUser.address = (string)miLector["addres"];
-                        oUser.profilePic = (byte[])miLector["profilePic"];
-                        oUser.level = (int)miLector["level"];
-                        oUser.levelxp = (int)miLector["levelxp"];
-
                     }
                 }
             }
@@ -109,19 +105,16 @@ namespace MAP_K0_DAL.Handlers
             SqlCommand miComando = new SqlCommand
             {
 
-                CommandText = "UPDATE K0_MAP_USERS SET id = @id, nickName = @nickName, firstName = @firstName, lastName = @lastName, address = @address, profilePic = @profilePic, level = @level, levelxp = @levelxp WHERE id = @id",
+                CommandText = "UPDATE K0_MAP_USERS SET id = @id, email = @email, firstName = @firstName, lastName = @lastName, address = @address WHERE id = @id",
 
                 Connection = conexion.getConnection()
             };
 
             miComando.Parameters.Add("@id", System.Data.SqlDbType.VarChar).Value = oUser.id;
-            miComando.Parameters.Add("@nickName", System.Data.SqlDbType.VarChar).Value = oUser.nickName;
+            miComando.Parameters.Add("@email", System.Data.SqlDbType.VarChar).Value = oUser.email;
             miComando.Parameters.Add("@firstName", System.Data.SqlDbType.VarChar).Value = oUser.firstName;
             miComando.Parameters.Add("@lastName", System.Data.SqlDbType.VarChar).Value = oUser.lastName;
             miComando.Parameters.Add("@address", System.Data.SqlDbType.VarChar).Value = oUser.address;
-            miComando.Parameters.Add("@profilePic", System.Data.SqlDbType.VarBinary).Value = oUser.profilePic;
-            miComando.Parameters.Add("@level", System.Data.SqlDbType.Int).Value = oUser.level;
-            miComando.Parameters.Add("@levelxp", System.Data.SqlDbType.Int).Value = oUser.levelxp;
 
             try
             {
@@ -154,21 +147,17 @@ namespace MAP_K0_DAL.Handlers
             SqlCommand miComando = new SqlCommand
             {
 
-                CommandText = "INSERT INTO K0_MAP_USER(id, nickName, firstName, lastName, address, profilePic, level, levelxp) VALUES (@id, @nickName, @firstName, @lastName, @address, @profilePic, @level, @levelxp)",
+                CommandText = "INSERT INTO K0_MAP_USERS(id, email, firstName, lastName, address) VALUES (@id, @email, @firstName, @lastName, @address)",
 
                 Connection = conexion.getConnection()
 
             };
 
             miComando.Parameters.Add("@id", System.Data.SqlDbType.VarChar).Value = oUser.id;
-            miComando.Parameters.Add("@nickName", System.Data.SqlDbType.VarChar).Value = oUser.nickName;
+            miComando.Parameters.Add("@email", System.Data.SqlDbType.VarChar).Value = oUser.email;
             miComando.Parameters.Add("@firstName", System.Data.SqlDbType.VarChar).Value = oUser.firstName;
             miComando.Parameters.Add("@lastName", System.Data.SqlDbType.VarChar).Value = oUser.lastName;
             miComando.Parameters.Add("@address", System.Data.SqlDbType.VarChar).Value = oUser.address;
-            miComando.Parameters.Add("@profilePic", System.Data.SqlDbType.VarBinary).Value = oUser.profilePic;
-            miComando.Parameters.Add("@level", System.Data.SqlDbType.Int).Value = oUser.level;
-            miComando.Parameters.Add("@levelxp", System.Data.SqlDbType.Int).Value = oUser.levelxp;
-
 
             try
             {

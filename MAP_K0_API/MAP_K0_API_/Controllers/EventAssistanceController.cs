@@ -58,14 +58,26 @@ namespace MAP_K0_API_.Controllers
         }
 
         // POST: api/EventsAssistance
-        public void Post([FromBody] clsEventAssistance oEventAssistance)
+        [HttpPost]
+        public IHttpActionResult Post([FromBody] clsEventAssistance oEventAssistance)
         {
             clsEventAssistanceHandlerBL oHandler = new clsEventAssistanceHandlerBL();
+            IHttpActionResult result;
+            int rowsAffected;
 
             try
             {
 
-                oHandler.createEventAssistance(oEventAssistance);
+                rowsAffected = oHandler.createEventAssistance(oEventAssistance);
+
+                if(rowsAffected == 0)
+                {
+                    result = NotFound();
+                }
+                else
+                {
+                    result = Ok();
+                }
             }
 
             catch (Exception e)
@@ -75,6 +87,7 @@ namespace MAP_K0_API_.Controllers
 
             }
 
+            return result;
         }
 
         // PUT: api/EventsAssistance/5

@@ -58,14 +58,25 @@ namespace MAP_K0_API_.Controllers
         }
 
         // POST: api/Users
-        public void Post([FromBody] clsUser oUser)
+        [HttpPost]
+        public IHttpActionResult Post([FromBody] clsUser oUser)
         {
             clsUserHandlerBL oHandler = new clsUserHandlerBL();
+            IHttpActionResult result;
+            int rowsAffected;
 
             try
             {
 
-                oHandler.createUser(oUser);
+                rowsAffected = oHandler.createUser(oUser);
+                if(rowsAffected == 0)
+                {
+                    result = NotFound();
+                }
+                else
+                {
+                    result = Ok();
+                }
             }
 
             catch (Exception e)
@@ -74,6 +85,8 @@ namespace MAP_K0_API_.Controllers
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
 
             }
+
+            return result;
 
         }
 
